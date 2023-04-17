@@ -4,9 +4,17 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/index')
 def index():
-    return "CS:GO = GOVNO"
+    return """<!doctype html>
+                <html lang="en">
+                  <head>
+                    <meta charset="utf-8">
+                    <title>Осторожно!</title>
+                  </head>
+                  <body>
+                    <a href="https://youtu.be/dQw4w9WgXcQ">Вот почему CS:GO = GOVNO</a>
+                  </body>
+                </html>"""
 
 
 if __name__ == '__main__':
